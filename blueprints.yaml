@@ -1,0 +1,27 @@
+name: Httpfully
+version: 1.0.0
+description: "This plugins brings Httpful functions to Twig. Httpful is a REST Friendly PHP HTTP Client Library"
+icon: globe
+author:
+  name: Cristian Martinez
+  email: me@martinec.org
+  url: http://martinec.org  
+homepage: https://github.com/martinec/grav-plugin-httpfully
+keywords: rest,http,httpful
+bugs: https://github.com/martinec/grav-plugin-httpfully/issues
+docs: https://github.com/martinec/grav-plugin-httpfully/blob/master/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
